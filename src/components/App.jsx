@@ -13,7 +13,7 @@ class App extends Component {
     this.setState({ query });
   };
   componentDidUpdate(_, prevState) {
-    const { images, query, page } = this.state;
+    const { query, page } = this.state;
     if (prevState.query !== query) {
       fetchImages(query, page).then(data => {
         this.setState(prev => ({ images: [...prev.images, ...data.hits] }));
