@@ -5,7 +5,7 @@ const KEY = '30220761-19f9286ae78f3e4900bbf1b48';
 
 export const fetchImages = async (query, page) => {
   const { data } = await axios.get(
-    `?q=${query}&page=${page}&key=${KEY}&image_type=photo&orientation=horizontal&per_page=12`
+    `?q=${query}&page=${page}&key=${KEY}&image_type=photo&orientation=horizontal&per_page=30`
   );
   return data;
 };
