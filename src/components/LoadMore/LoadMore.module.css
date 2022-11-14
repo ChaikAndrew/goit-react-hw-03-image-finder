@@ -1,0 +1,22 @@
+.loadMore {
+  display: flex;
+  justify-content: center;
+
+  margin: 15px 0;
+}
+
+.loadMore_btn {
+  text-align: center;
+  width: 80px;
+  height: 30px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.loadMore_btn:hover,
+.loadMore_btn:focus {
+  background-color: rgb(218, 255, 255);
+}

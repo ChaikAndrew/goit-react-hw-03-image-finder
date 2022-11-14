@@ -46,6 +46,7 @@ class App extends Component {
     return (
       <>
         <SearchBar onSubmit={this.handleSubmitForm} />
+
         <ImageGallery images={this.state.images} />
 
         {!!this.state.totalHits &&
